@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#Tours">Tours</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Home" class="ctn">Contact</a></li>
+        </ul>
+        <img src="img\menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <header id="Home">
+        <div class="header-content">
+            <h3>Explore The Colorful World</h3>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <section id="Events">
+        <div class="event-body">
+            <div class="event-content">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row row-1">
+                <div class="col-1">
+                    <img src="img\img1.png" alt="" class="img img-1">
+                </div>
+                <div class="col-2">
+                    <img src="img\img2.png" alt="" class="img img-2">
+                </div>
+            </div>
+            <div class="row row-2">
+                <article class="col-1">Lorem ipsum dolor sit amet  adipisicing elit. Placeat iusto accusamus perferendis beatae nemo expedita quod cupiditate veniam, reiciendis veritatis.</article>
+                <article class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore dolorum ullam quidem sit illo nulla cum possimus pariatur ab?</article>
+            </div>
+            <div class="row row-3">
+                <a href="" class="ctn">Learn More</a>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+        </div>        
+    </section>
+
+    <section id="Explore">
+        <div class="explore-sect">
+            <div class="explore-content">
+                <h1>Explore The World</h1>
+                <div class="line explore-line"></div>
+                <article>Lorem ipsum dolor sit amet   elit. Harum est nobis nesciunt repellat eum accusantium excepturi numquam incidunt. Sapiente, repellat! Commodi aliquid quas vitae dolorum natus ipsam, consectetur veniam harum architecto facilis. Quas quasi architecto provident ducimus libero amet, dolores adipisci optio ipsam, enim numquam laboriosam cumque molestias totam ex.</article>                
+            </div>
+        </div>
+    </section>
+
+    <section id="Tours">
+        <div class="tour-main">
+            <div class="tour-content">
+                <h1>UPCOMING TOURS & TRAVEL</h1>
+                <div class="line tour-line"></div>
+                <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quibusdam explicabo cum laborum, repellat quisquam possimus quas dolor facilis adipisci!</article>
+                <a href="" class="ctn">Learn More</a>
+            </div>
+            <div class="tour-img">
+                <img src="img\img3.png" alt="" class="tour-img img1">
+                <img src="img\img4.png" alt="" class="tour-img img2">
+                <img src="img\img5.png" alt="" class="tour-img img3">
+                <img src="img\img6.png" alt="" class="tour-img img4">
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="footer-main">
+            <div class="footer-content">
+                <p>123 Fifth Avenue,NY 10124,New York,USA|Phone:484-239584|Email:abs@gmail.com</p>
+                <p>Copyright © 2023 Project</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
